@@ -1,0 +1,21 @@
+{
+  "name": "cli-website",
+  "version": "0.0.0",
+  "description": "A simple website that has a cli-like frontend",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reify",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "jade": "^1.11.0"
+  },
+  "dependencies": {
+    "normalize": "^0.3.1"
+  }
+}
