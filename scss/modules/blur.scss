@@ -1,0 +1,59 @@
+@import 'config';
+
+
+
+@-webkit-keyframes blur {
+  0% , 100%  {
+  	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name;  
+	}
+  50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px $blur-color; 
+   }
+}
+@-moz-keyframes blur {
+  0% , 100% { 
+    color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name; 
+	}
+   50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px $blur-color; 
+   }
+}
+@-o-keyframes blur {
+  0% , 100%   { 
+  	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name; 
+	}
+   50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px $blur-color;  
+   }
+}
+@keyframes blur {
+  0% , 100%  { 
+  	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name;
+	 }
+   50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px $blur-color; 
+   }
+}
+
+
+#blurry-text
+{
+	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name;
+	-webkit-animation: blur 1s 3s;
+  	-moz-animation:    blur 1s 3s; 
+ 	-o-animation:      blur 1s 3s;
+  	animation:         blur 1s 3s;
+}

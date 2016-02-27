@@ -37,19 +37,3 @@
   -moz-animation: blur 1s 3s;
   -o-animation: blur 1s 3s;
   animation: blur 1s 3s; }
-
-#app {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000000; }
-
-.user-name {
-  color: #ffffff;
-  font: monospace; }
-
-.user-text {
-  color: #ffffff;
-  font: monospace; }
