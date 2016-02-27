@@ -1,15 +1,19 @@
-body {
-  background-color: #000000; }
-
-p {
-  font-family: monospace;
-  color: #ffffff; }
-
 .blur {
   color: transparent;
   text-shadow: 0 0 5px white; }
 
-h1 {
-  font-family: monospace;
-  font-size: 40px;
-  color: #ffffff; }
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000; }
+
+.user-name {
+  color: #ffffff;
+  font: monospace; }
+
+.user-text {
+  color: #ffffff;
+  font: monospace; }

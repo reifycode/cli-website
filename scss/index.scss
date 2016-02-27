@@ -1,29 +1,21 @@
+@import 'modules/config';
+@import 'modules/blur';
 
-$command-line-color: #ffffff;
-$background-initial: #000000;
-$command-line-font-1: monospace;
-
-body { 
-	background-color: $background-initial;
+#app {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: $color-app-background;
 }
 
-p {
-	font-family: $command-line-font-1;
-	color: $command-line-color;
+.user-name {
+	color: $color-command-line-user-name;
+	font: $font-command-line-user-name;
 }
 
-.blur {
-	color: transparent;
-	text-shadow: 0 0 5px rgba(255, 255, 255, 2);
+.user-text {
+	color: $color-command-line-user-text;
+	font: $font-command-line-user-text;
 }
-
-h1 {
-	font-family: $command-line-font-1;
-	font-size: 40px;
-	color: $command-line-color;
-}
-
-
-
-
-

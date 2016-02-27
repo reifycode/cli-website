@@ -1,11 +1,13 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
     script(src='css/normalize.css')
     link(href='css/index.css', rel='stylesheet')
     title= pageTitle
   body
-    h1 Welcome
-    p.
-      abc
+    div(id='app')
+      div(class='line')
+        span(class='user-name') root@root:~$ 
+        span(class='user-text') Hello
+    div(id='footer')
     script(src='/js/index.js')
