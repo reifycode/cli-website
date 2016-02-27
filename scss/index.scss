@@ -1,5 +1,4 @@
-@import 'modules/config';
-@import 'modules/blur';
+@import 'config';
 
 #app {
 	position: absolute;
@@ -18,4 +17,61 @@
 .user-text {
 	color: $color-command-line-user-text;
 	font: $font-command-line-user-text;
+}
+
+
+@-webkit-keyframes blur {
+  0% , 100%  {
+  	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name;  
+	}
+  50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px rgba(0,125,125,0.5); 
+   }
+}
+@-moz-keyframes blur {
+  0% , 100% { 
+    color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name; 
+	}
+   50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px rgba(255,255,255,2); 
+   }
+}
+@-o-keyframes blur {
+  0% , 100%   { 
+  	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name; 
+	}
+   50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px rgba(255,255,255,2);  
+   }
+}
+@keyframes blur {
+  0% , 100%  { 
+  	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name;
+	 }
+   50%
+   {   
+  		color: transparent;
+   		text-shadow: 0 0 5px rgba(255,255,255,2); 
+   }
+}
+
+
+#blurry-text{
+
+	color: $color-command-line-user-name;
+	font-family: $font-command-line-user-name;
+	-webkit-animation: blur 1s 3s;
+  	-moz-animation:    blur 1s 3s; 
+ 	-o-animation:      blur 1s 3s;
+  	animation:         blur 1s 3s;
 }
