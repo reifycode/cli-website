@@ -45,4 +45,10 @@ gulp.task('jade', function() {
 	browserSync.reload();
 });
 
+// Normalize
+gulp.task('dependencies', function() {
+	gulp.src('./node_modules/normalize.css/normalize.css')
+	.pipe(gulp.dest('./css/'));
+});
+
 gulp.task('default', ['serve']);

@@ -3,29 +3,25 @@ $command-line-color: #ffffff;
 $background-initial: #000000;
 $command-line-font-1: monospace;
 
-body
-	{ 
+body { 
 	background-color: $background-initial;
-	}
+}
 
-p	
-	{
+p {
 	font-family: $command-line-font-1;
 	color: $command-line-color;
-	}
-.blur
-	{
+}
+
+.blur {
 	color: transparent;
 	text-shadow: 0 0 5px rgba(255, 255, 255, 2);
-	}
+}
 
-h1
-	{
-		font-family: $command-line-font-1;
-		font-size: 40px;
-		color: $command-line-color;
-
-	}
+h1 {
+	font-family: $command-line-font-1;
+	font-size: 40px;
+	color: $command-line-color;
+}
 
 
 
