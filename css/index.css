@@ -1,5 +1,15 @@
-head {
-  color: #f00; }
+body {
+  background-color: #000000; }
 
 p {
-  color: #f00; }
+  font-family: monospace;
+  color: #ffffff; }
+
+.blur {
+  color: transparent;
+  text-shadow: 0 0 5px white; }
+
+h1 {
+  font-family: monospace;
+  font-size: 40px;
+  color: #ffffff; }
