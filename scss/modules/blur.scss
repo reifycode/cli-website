@@ -1,7 +1,5 @@
 @import 'config';
 
-
-
 @-webkit-keyframes blur {
   0% , 100%  {
   	color: $color-command-line-user-name;
@@ -53,7 +51,7 @@
 	color: $color-command-line-user-name;
 	font-family: $font-command-line-user-name;
 	-webkit-animation: blur 1s 3s;
-  	-moz-animation:    blur 1s 3s; 
+  -moz-animation:    blur 1s 3s; 
  	-o-animation:      blur 1s 3s;
-  	animation:         blur 1s 3s;
+  animation:         blur 1s 3s;
 }
