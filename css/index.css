@@ -94,3 +94,5 @@
 .user-text {
   color: #ffffff;
   font: monospace; }
+  .user-text::after {
+    content: ''; }

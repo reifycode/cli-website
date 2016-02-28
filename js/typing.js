@@ -8,6 +8,6 @@ function type() {
 		clearTimeout(loopTimer); 
                 return false;
 	}
-	loopTimer = setTimeout('type()',70);
+	loopTimer = setTimeout('type()', 70);
 }
 type();
