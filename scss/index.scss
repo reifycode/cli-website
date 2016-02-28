@@ -3,6 +3,7 @@
 @import 'modules/blink';
 
 #app {
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -12,11 +13,13 @@
 }
 
 .user-name {
+	font-size: 125%;
 	color: $color-command-line-user-name;
 	font: $font-command-line-user-name;
 }
 
 .user-text {
+	font-size: 125%;
 	color: $color-command-line-user-text;
 	font: $font-command-line-user-text;
 }

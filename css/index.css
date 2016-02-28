@@ -88,11 +88,11 @@
   background-color: #000000; }
 
 .user-name {
+  font-size: 125%;
   color: #ffffff;
   font: monospace; }
 
 .user-text {
+  font-size: 125%;
   color: #ffffff;
   font: monospace; }
-  .user-text::after {
-    content: ''; }
