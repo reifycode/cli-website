@@ -3,7 +3,7 @@ var textArray = commandLineText.split("");
 var loopTimer;
 function type() {
 	if(textArray.length > 0) {
-		document.getElementById("blurry-text").innerHTML += textArray.shift();
+		document.getElementById("user-text-active").innerHTML += textArray.shift();
 	} else {
 		clearTimeout(loopTimer); 
                 return false;
