@@ -89,10 +89,15 @@
 
 .user-name {
   font-size: 125%;
-  color: #ffffff;
+  color: #00ff00;
   font: monospace; }
 
 .user-text {
   font-size: 125%;
   color: #ffffff;
+  font: monospace; }
+
+#timed-text {
+  font-size: 125%;
+  color: #00ff00;
   font: monospace; }

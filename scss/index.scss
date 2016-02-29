@@ -14,12 +14,18 @@
 
 .user-name {
 	font-size: 125%;
-	color: $color-command-line-user-name;
+	color: $color-command-line-green;
 	font: $font-command-line-user-name;
 }
 
 .user-text {
 	font-size: 125%;
 	color: $color-command-line-user-text;
+	font: $font-command-line-user-text;
+}
+
+#timed-text {
+	font-size: 125%;
+	color: $color-command-line-green;
 	font: $font-command-line-user-text;
 }
