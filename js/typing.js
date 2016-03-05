@@ -49,6 +49,11 @@
 		return h + ":" + m;
 	}
 
+	window.onload = function()
+	{
+		document.getElementById('user').innerHTML = _getTimeText() + document.getElementById('user').innerHTML;
+	}
+
 	function _newLine() {
 		var previousActive = document.getElementById(_id.activeText);
 		
