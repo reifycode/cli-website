@@ -4,13 +4,12 @@ html(lang='en')
     link(href='css/normalize.css', rel='stylesheet')
     link(href='css/index.css', rel='stylesheet')
     title= pageTitle
-  body(onload='startTime()')
+  body
     div(id='app')
       div(class='line', id="blurry-text")
-        span(id='timed-text') 
         span(class='user-name') -reify@root:~$ 
         span(class='user-text', id='user-text-active')  
-        span(class="blinking-cursor") █
+        span(id='blinking-cursor') █
     div(id='footer')
     script(src='js/typing.js')
     script(src='js/index.js')
