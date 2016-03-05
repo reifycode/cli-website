@@ -1,6 +1,6 @@
 (function() {
 	var _textArray = [];
-	var _shiftTime = 70; // Time to shift each letter
+	var _shiftTime = 20; // Time to shift each letter
 	var _userNameText = "-reify@root:~$ ";
 	var _cursorText = " █";
 
@@ -31,9 +31,18 @@
 		if(_textArray.length > 0) {
 			var currentText = _textArray.shift();
 
-			if(currentText == '\n') _newLine();
-			else document.getElementById(_id.activeText).innerHTML += currentText;
-
+			if(currentText == '\0') 
+			{
+				_newcommandLine();
+			}
+			else if(currentText == '\n') 
+			{
+				document.getElementById(_id.activeText).innerHTML += '<br>';
+			}
+			else 
+			{
+				document.getElementById(_id.activeText).innerHTML += currentText;
+			}
 			setTimeout(type, _shiftTime);
 		}
 	}
@@ -54,7 +63,7 @@
 		document.getElementById('user').innerHTML = _getTimeText() + document.getElementById('user').innerHTML;
 	}
 
-	function _newLine() {
+	function _newcommandLine() {
 		var previousActive = document.getElementById(_id.activeText);
 		
 		// remove the blinking cursor

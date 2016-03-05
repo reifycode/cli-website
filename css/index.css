@@ -71,7 +71,7 @@
     opacity: 1; } }
 
 #blinking-cursor {
-  font-size: 150%;
+  font-size: 115%;
   font-family: monospace;
   color: #00ff00;
   -webkit-animation: blink 0.7s infinite;
@@ -88,16 +88,16 @@
   background-color: #000000; }
 
 .user-name {
-  font-size: 125%;
+  font-size: 130%;
   color: #00ff00;
-  font: monospace; }
+  font-family: monospace; }
 
 .user-text {
-  font-size: 125%;
+  font-size: 130%;
   color: #ffffff;
-  font: monospace; }
+  font-family: monospace; }
 
 #timed-text {
-  font-size: 125%;
+  font-size: 130%;
   color: #00ff00;
-  font: monospace; }
+  font-family: monospace; }
