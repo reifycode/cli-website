@@ -38,6 +38,11 @@
 			{
 				_newcommandLine();
 			}
+			else if(currentText == '[')
+			{
+				document.getElementById(_id.activeText).innerHTML +=  currentText + _getTimeText();
+			}
+
 			else if(currentText == '\n') // print a new line without printing the user-name 
 			{
 				document.getElementById(_id.activeText).innerHTML += '<br>';
@@ -68,7 +73,6 @@
 	window.onload = function()
 	{
 		document.getElementById('user').innerHTML = _getTimeText() + document.getElementById('user').innerHTML;
-		commandCounter++;
 	}
 
 	function _newcommandLine() {
