@@ -31,14 +31,14 @@
 		if(_textArray.length > 0) {
 			var currentText = _textArray.shift();
 
-			if(currentText == '\n') newLine();
+			if(currentText == '\n') _newLine();
 			else document.getElementById(_id.activeText).innerHTML += currentText;
 
 			setTimeout(type, _shiftTime);
 		}
 	}
 
-	function getTimeText() {
+	function _getTimeText() {
 		var checkTime = i => { return (i < 10) ? ("0" + i) : i; }
 
 		var today = new Date();
@@ -49,7 +49,7 @@
 		return h + ":" + m;
 	}
 
-	function newLine() {
+	function _newLine() {
 		var previousActive = document.getElementById(_id.activeText);
 		
 		// remove the blinking cursor
@@ -63,7 +63,7 @@
 		// 00:00-reify@root:~$
 		var userNameNode = document.createElement("SPAN");
 		userNameNode.className = _class.userName;
-		userNameNode.appendChild(document.createTextNode(getTimeText() + _userNameText));
+		userNameNode.appendChild(document.createTextNode(_getTimeText() + _userNameText));
 		lineNode.appendChild(userNameNode);
 
 		// Whatever is being typed
