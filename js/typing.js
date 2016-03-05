@@ -2,7 +2,7 @@
 	var _textArray = [];
 	var _shiftTime = 70; // Time to shift each letter
 	var _userNameText = "-reify@root:~$ ";
-
+	var _cursorText = " █";
 
 	var _cache = {
 		app: document.getElementById("app")
@@ -74,6 +74,7 @@
 
 		var cursor = document.createElement("SPAN");
 		cursor.id = _id.cursor;
+		cursor.appendChild(document.createTextNode(_cursorText));
 		lineNode.appendChild(cursor);
 
 		_cache.app.appendChild(lineNode);

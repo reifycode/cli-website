@@ -70,7 +70,7 @@
   100% {
     opacity: 1; } }
 
-.blinking-cursor {
+#blinking-cursor {
   font-size: 150%;
   font-family: monospace;
   color: #00ff00;
