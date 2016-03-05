@@ -1,8 +1,11 @@
 (function() {
 	var _textArray = [];
 	var _shiftTime = 20; // Time to shift each letter
+	var _guestUserNameText = "-guest@user:~$";
 	var _userNameText = "-reify@root:~$ ";
+	var commandCounter = 1; //Used to shift between our bot and the guest user
 	var _cursorText = " █";
+	var _shiftAmount = 3; 
 
 	var _cache = {
 		app: document.getElementById("app")
@@ -31,14 +34,18 @@
 		if(_textArray.length > 0) {
 			var currentText = _textArray.shift();
 
-			if(currentText == '\0') 
+			if(currentText == '\0') // go to the next command line window. 
 			{
 				_newcommandLine();
 			}
-			else if(currentText == '\n') 
+			else if(currentText == '\n') // print a new line without printing the user-name 
 			{
 				document.getElementById(_id.activeText).innerHTML += '<br>';
 			}
+			/*else if(currentText == '\b') // Go back by _shiftamount
+			{
+				document.getElementById(_id)
+			}*/
 			else 
 			{
 				document.getElementById(_id.activeText).innerHTML += currentText;
@@ -46,7 +53,7 @@
 			setTimeout(type, _shiftTime);
 		}
 	}
-
+	// Find current time and display it. 
 	function _getTimeText() {
 		var checkTime = i => { return (i < 10) ? ("0" + i) : i; }
 
@@ -61,6 +68,7 @@
 	window.onload = function()
 	{
 		document.getElementById('user').innerHTML = _getTimeText() + document.getElementById('user').innerHTML;
+		commandCounter++;
 	}
 
 	function _newcommandLine() {
@@ -77,7 +85,13 @@
 		// 00:00-reify@root:~$
 		var userNameNode = document.createElement("SPAN");
 		userNameNode.className = _class.userName;
-		userNameNode.appendChild(document.createTextNode(_getTimeText() + _userNameText));
+		if(commandCounter % 2 == 1)
+
+			userNameNode.appendChild(document.createTextNode(_getTimeText() + _userNameText));
+
+		else
+			userNameNode.appendChild(document.createTextNode(_getTimeText() + _guestUserNameText));
+		commandCounter++;
 		lineNode.appendChild(userNameNode);
 
 		// Whatever is being typed
